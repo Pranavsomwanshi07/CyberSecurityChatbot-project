@@ -42,7 +42,8 @@ async def reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(answer)
 
 def main():
-    TOKEN = os.getenv("8635745149:AAGuPsIpC27IPl0KDEpSd21ZakvJg1rbBiM")  # ❗ Railway reads from environment
+    TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+    
 
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, reply))
