@@ -1,0 +1,46 @@
+question,answer,category,level
+what is cybersecurity,Cybersecurity protects systems networks and data from cyber attacks.,Basics,Beginner
+what is information security,Information security protects data from unauthorized access.,Basics,Beginner
+what is cia triad,CIA stands for Confidentiality Integrity and Availability.,Basics,Beginner
+what is malware,Malware is malicious software designed to damage systems or steal data.,Malware,Beginner
+what is ransomware,Ransomware encrypts data and demands payment.,Malware,Beginner
+what is spyware,Spyware secretly monitors user activity.,Malware,Beginner
+what is firewall,A firewall filters incoming and outgoing network traffic.,Network Security,Beginner
+what is phishing,Phishing tricks users into revealing sensitive information.,Attacks,Beginner
+what is brute force attack,A brute force attack tries many passwords until one works.,Attacks,Beginner
+what is keylogger,A keylogger records keystrokes to steal passwords.,Attacks,Beginner
+
+ways hackers steal passwords,Passwords are stolen using phishing fake login pages and malware.,Passwords,Beginner
+how hackers steal passwords,Hackers steal passwords using social engineering and keyloggers.,Passwords,Beginner
+password hacking techniques,Common techniques include phishing malware and brute force.,Passwords,Beginner
+credential stuffing attack,Credential stuffing uses leaked passwords on multiple sites.,Passwords,Intermediate
+password spraying attack,Password spraying tries common passwords on many accounts.,Passwords,Intermediate
+
+what is ddos attack,A DDoS attack overwhelms systems with traffic.,Network Security,Beginner
+what is man in the middle attack,MITM intercepts communication between two parties.,Network Security,Intermediate
+what is vpn,A VPN encrypts internet traffic for privacy.,Network Security,Beginner
+what is ssl,SSL encrypts data between browser and server.,Network Security,Beginner
+what is tls,TLS is a secure communication protocol.,Network Security,Intermediate
+
+what is virus,A virus attaches itself to legitimate programs.,Malware,Beginner
+what is worm,A worm spreads automatically across networks.,Malware,Beginner
+what is trojan,A trojan disguises itself as legitimate software.,Malware,Beginner
+what is botnet,A botnet is a network of infected devices.,Malware,Intermediate
+
+what is social engineering,Social engineering manipulates people to gain information.,Attacks,Beginner
+what is zero day attack,A zero day attack exploits unknown vulnerabilities.,Attacks,Advanced
+what is sql injection,SQL injection inserts malicious queries into databases.,Web Security,Beginner
+what is xss attack,XSS injects malicious scripts into websites.,Web Security,Beginner
+what is csrf attack,CSRF forces users to perform unwanted actions.,Web Security,Intermediate
+
+how to prevent phishing,Use email filtering user training and verification.,Defense,Beginner
+how to prevent malware,Use antivirus updates and safe browsing.,Defense,Beginner
+how to secure passwords,Use strong unique passwords and a manager.,Defense,Beginner
+what is two factor authentication,2FA adds an extra security step.,Defense,Beginner
+what is multi factor authentication,MFA uses multiple verification methods.,Defense,Beginner
+
+what is ethical hacking,Ethical hacking tests systems for vulnerabilities.,Careers,Beginner
+what is penetration testing,Pen testing simulates cyber attacks.,Careers,Beginner
+what is red team,Red teams simulate real world attacks.,Careers,Intermediate
+what is blue team,Blue teams defend systems from attacks.,Careers,Intermediate
+what is soc analyst,A SOC analyst monitors security incidents.,Careers,Beginner
