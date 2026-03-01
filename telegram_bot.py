@@ -8,22 +8,17 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 print("🤖 Telegram Cybersecurity Bot Starting...")
 
-# 🔐 Load dataset
+# Load dataset
 data = pd.read_csv("dataset.csv")
 
 questions = data["question"].astype(str).values
 answers = data["answer"].astype(str).values
 
-# Vectorizer
-vectorizer = TfidfVectorizer(
-    stop_words="english",
-    ngram_range=(1, 3)
-)
+vectorizer = TfidfVectorizer(stop_words="english", ngram_range=(1, 3))
 question_vectors = vectorizer.fit_transform(questions)
 
 def get_answer(user_query):
     user_query = user_query.lower().strip()
-
     user_vec = vectorizer.transform([user_query])
     similarity = cosine_similarity(user_vec, question_vectors)
 
@@ -35,7 +30,6 @@ def get_answer(user_query):
 
     return answers[best_match]
 
-# ✅ ASYNC reply (required for Railway)
 async def reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_msg = update.message.text
     answer = get_answer(user_msg)
@@ -43,7 +37,9 @@ async def reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-    
+
+    if not TOKEN:
+        raise RuntimeError("❌ TELEGRAM_BOT_TOKEN not set")
 
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, reply))
@@ -53,8 +49,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-   
-
-    
